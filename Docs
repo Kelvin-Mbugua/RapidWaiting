@@ -1,0 +1,69 @@
+"""
+Rapid Waiting System Documentation
+
+This code implements a simple restaurant management system using the Tkinter library in Python.
+
+Modules Used:
+- tkinter: Provides the main functionality for creating the GUI.
+- random: Used for generating random values.
+- time: Used for displaying the current time.
+- ttk: Provides themed widgets for Tkinter.
+- messagebox: Used for displaying message boxes.
+
+Functions:
+1. system():
+   - This is the main function that sets up the GUI and defines various event handlers.
+
+2. Database():
+   - This function establishes a connection to the SQLite database file "Restaurant.db".
+   - It creates a table named "Restaurantrecords" if it doesn't exist already.
+
+3. tottal():
+   - This function calculates the cost, tax, subtotal, and total based on the input values.
+   - It fetches the values from the entry boxes and performs the required computations.
+   - The calculated values are then displayed in the corresponding entry boxes.
+
+4. reset():
+   - This function resets all the entry boxes to empty values.
+
+5. exit():
+   - This function destroys the root window, i.e., quits the application.
+
+6. DisplayData():
+   - This function fetches and displays the data from the "Restaurantrecords" table in the Treeview widget.
+
+7. add():
+   - This function adds a new record to the "Restaurantrecords" table in the database.
+   - It retrieves the values from the entry boxes and inserts them into the table.
+
+8. Delete():
+   - This function deletes the selected record from the "Restaurantrecords" table.
+   - It prompts the user for confirmation and then removes the record from the table.
+
+Variables:
+- Various variables are defined to store the input values and calculated results:
+  - orderno, Shawarma, ShawarmaFries, FivePcsWings, FivePcswithFries, FriedChicken,
+    MarylandChickenBiryani, ChickenBiryani, Choma, MasalaChips, Soda, FreshJuice,
+    Cocktails, Mocktails, Milkshake, cost, subtotal, tax, total.
+- The root, topframe, leftframe, and rightframe are Tkinter widgets used for organizing the GUI layout.
+- The my_tree variable represents the Treeview widget used for displaying data from the database.
+- The style variable is used to configure the appearance of the Treeview widget.
+
+GUI Layout:
+- The GUI layout consists of a topframe, leftframe, and rightframe.
+- The topframe contains the title and current time.
+- The leftframe contains labels and entry boxes for inputting order details.
+- The rightframe contains a Treeview widget for displaying records from the database.
+- Horizontal and vertical scrollbars are added to the Treeview widget for scrolling.
+
+Usage:
+- To use the application, run the script and a window titled "Rapid Waiting System" will appear.
+- Enter the order details in the input fields.
+- Use the buttons to calculate totals, add records, delete records, reset the form, or exit the application.
+- The records from the database will be displayed in the Treeview widget.
+
+Note:
+- The code provided is not complete and may contain errors or missing functionality.
+- The database file "Restaurant.db" needs to be created separately with the required table structure.
+- Additional code or modifications may be required to make the application fully functional.
+"""
